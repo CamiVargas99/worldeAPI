@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Indie+Flower&display=swap');
+
+body {
+    background-image: url('WhatsApp Image 2024-06-26 at 04.24.40.jpeg');
+    background-position: center 1%;
+    background-repeat: no-repeat;
+    font-family: 'Comfortaa', sans-serif; 
+    
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Caveat', cursive; 
+}
+
+#guess-input {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Comfortaa', sans-serif; 
+}
+
+#guess-button, #reset-button {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0CBABA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Comfortaa', sans-serif; 
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.letter {
+    padding: 10px;
+    margin: 5px;
+    min-width: 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: transparent;
+    font-family: 'Comfortaa', sans-serif; 
+}
+
+.row {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-area {
+    margin: 30px;
+    text-align: center;
+}
+
+#additional-messages {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilo para las partículas sakura */
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.sakura {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: pink;
+    border-radius: 50%;
+    animation: fall linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
